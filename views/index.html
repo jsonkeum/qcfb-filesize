@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>File Metadata Microservice</title>
+    <meta name="description" content="An API to search for images on the web">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div class="container-fluid" id="app">
+        <div id="header">
+            <h1 class="text-center">File Metadata Microservice</h1>
+            <p class="text-right">by QuanchiFootball</p>
+        </div>
+        <br>
+        <p>
+            Upload a file and the service will return an object containing the file size in bytes.
+        </p>
+        <h4 style="font-weight:bold">Upload</h4>
+        <div class="well container blackbox">
+          <form action="/get-file-size" method="post" enctype="multipart/form-data">
+            <div class="row">
+              <div class="col-sm-4">
+                <input type="file" name="file">
+              </div>
+              <div class="col-sm-3">
+                <input type="submit" id="submit">
+              </div>
+            </div>
+          </form>
+        </div>
+        <h4 style="font-weight:bold">Example</h4>
+        <div class="well container blackbox">
+            {
+            <br>
+            <span class="key">"size"</span>:506359
+            <br>
+            }
+        </div>
+        <footer>
+            <em>I wrote this API as part of FreeCodeCamp's Back-end development curriculum.<br>
+            Check out the source on my <a href="https://quanchifootball.github.io" target="_blank">Github page</a></em>
+        </footer>
+    </div>
+  </body>
+</html>

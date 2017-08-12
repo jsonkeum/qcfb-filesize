@@ -1,0 +1,24 @@
+{
+  "name": "qcfb-filesize",
+  "version": "1.0.0",
+  "description": "FCC Project - Filesize API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quanchifootball/qcfb-filesize.git"
+  },
+  "author": "quanchifootball",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/quanchifootball/qcfb-filesize/issues"
+  },
+  "homepage": "https://github.com/quanchifootball/qcfb-filesize#readme",
+  "dependencies": {
+    "express": "^4.15.4",
+    "multer": "^1.3.0"
+  }
+}
